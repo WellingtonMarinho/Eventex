@@ -1,4 +1,5 @@
 from django.conf.urls import include, url
+from django.urls import path
 from django.contrib import admin
 from eventex.core.views import home
 
@@ -8,6 +9,8 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', home),
     url(r'^admin/', admin.site.urls),
+    #path('', home),
+    #path('admin/', admin.site.urls),
 ]
 
 
