@@ -32,7 +32,6 @@ def create(request):
     return HttpResponseRedirect('/inscricao/')
 
 
-
 def new(request):
     return render(request, 'subscriptions/subscription_form.html',
                   {'form': SubscriptionForm()})
