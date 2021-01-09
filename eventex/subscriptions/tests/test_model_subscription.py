@@ -24,4 +24,3 @@ class SubscriptionModelTest(TestCase):
 
     def test_str(self):
         self.assertEqual('Wellington Marinho', str(self.obj))
-
