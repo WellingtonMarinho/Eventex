@@ -84,7 +84,8 @@ class CourseModelTest(TestCase):
         )
         self.assertEqual(1, self.course.speakers.count())
 
-
     def test_str(self):
-        self.assertEqual('Título do curso')
-# Parei no minuto 09 da aula Como anuncio os mini cursos?
+        self.assertEqual('Título do Curso', str(self.course))
+
+    def test_manager(self):
+        self.assertIsInstance(Course.objects, PeriodManager)
