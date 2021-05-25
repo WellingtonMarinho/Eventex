@@ -57,3 +57,12 @@ class Talk(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Course(models.Model):
+    title = models.CharField(max_length=200)
+    start = models.TimeField()
+    description = models.TextField()
+    slots = models.IntegerField()
+    speakers = models.ManyToManyField('Speaker')
+
