@@ -64,8 +64,14 @@ class Talk(Activity):
     pass
 
 
+class CourseOld(Activity):
+    slots = models.IntegerField()
 
-class Course(Activity):
+    class Meta:
+        verbose_name = 'Curso'
+        verbose_name_plural = 'Cursos'
+
+class Course(Talk):
     slots = models.IntegerField()
 
     class Meta:
